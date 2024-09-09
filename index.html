@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> 
+  <title>Dynamic Resume Builder</title> 
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="botmar"><img src="/logtop.png" width="80" /> <div class="topnew">Dynamic Resume By Merchantsons</div> </div>
+  <form id="resume-form">
+    <h2><u>Personal Information</u></h2>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <h2><u>Education</u></h2>
+    <label for="education">Education:</label>
+    <textarea id="education" name="education" required></textarea>
+
+    <h2><u>Work Experience</u></h2>
+    <label for="work-experience">Work Experience:</label>
+    <textarea id="work-experience" name="work-experience" required></textarea>
+
+    <h2><u>Skills</u></h2>
+    <label for="skills">Skills:</label>
+    <textarea id="skills" name="skills" required></textarea>
+
+    <button type="submit">Generate Resume</button>
+  </form>
+  <div id="resume-output"></div>
+  <script src="./index.js"></script>
+  <hr />
+</body>
+</html>
